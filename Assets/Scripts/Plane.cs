@@ -15,4 +15,10 @@ public class Plane : Vehicle
     {
         Debug.Log("Plane is accelerating");
     }
+
+    protected override float CalculateVehicleValue()
+    {
+        float value = speed * 200 + maxFlightHeight * 50;
+        return value;
+    }
 }

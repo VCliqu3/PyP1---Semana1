@@ -15,4 +15,10 @@ public class Car : Vehicle
     {
         Debug.Log("Car is accelerating");
     }
+
+    protected override float CalculateVehicleValue()
+    {
+        float value = speed * 75 + horsePower * 100;
+        return value;
+    }
 }

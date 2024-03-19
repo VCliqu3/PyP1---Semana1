@@ -17,4 +17,10 @@ public class Vehicle
     {
         Debug.Log("Vehicle is accelerating");
     }
+
+    protected virtual float CalculateVehicleValue()
+    {
+        float value = speed * 100;
+        return speed;
+    }
 }

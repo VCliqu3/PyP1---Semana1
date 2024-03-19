@@ -12,4 +12,9 @@ public class Plane : Vehicle
         this.speed = speed;
         this.maxFlightHeight = maxFlightHeight;
     }
+
+    protected override void Accelerate()
+    {
+        Debug.Log("Plane is accelerating");
+    }
 }

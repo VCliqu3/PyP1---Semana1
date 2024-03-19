@@ -12,4 +12,9 @@ public class Car : Vehicle
         this.speed = speed;
         this.horsePower = horsePower;
     }
+
+    protected override void Accelerate()
+    {
+        Debug.Log("Car is accelerating");
+    }
 }

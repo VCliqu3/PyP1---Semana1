@@ -13,12 +13,12 @@ public class Vehicle
         this.speed = speed;
     }
 
-    protected virtual void Accelerate()
+    public virtual void Accelerate()
     {
         Debug.Log("Vehicle is accelerating");
     }
 
-    protected virtual float CalculateVehicleValue()
+    public virtual float CalculateVehicleValue()
     {
         float value = speed * 100;
         return speed;

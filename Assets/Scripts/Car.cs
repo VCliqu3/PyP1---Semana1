@@ -11,12 +11,12 @@ public class Car : Vehicle
         this.horsePower = horsePower;
     }
 
-    protected override void Accelerate()
+    public override void Accelerate()
     {
         Debug.Log("Car is accelerating");
     }
 
-    protected override float CalculateVehicleValue()
+    public override float CalculateVehicleValue()
     {
         float value = speed * 75 + horsePower * 100;
         return value;

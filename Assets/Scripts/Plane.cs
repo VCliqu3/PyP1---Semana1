@@ -11,12 +11,12 @@ public class Plane : Vehicle
         this.maxFlightHeight = maxFlightHeight;
     }
 
-    protected override void Accelerate()
+    public override void Accelerate()
     {
         Debug.Log("Plane is accelerating");
     }
 
-    protected override float CalculateVehicleValue()
+    public override float CalculateVehicleValue()
     {
         float value = speed * 200 + maxFlightHeight * 50;
         return value;

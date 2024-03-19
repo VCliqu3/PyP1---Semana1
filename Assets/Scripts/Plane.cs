@@ -6,10 +6,8 @@ public class Plane : Vehicle
 {
     protected float maxFlightHeight;
 
-    public Plane(string _name, float speed, float maxFlightHeight)
+    public Plane(string _name, float speed, float maxFlightHeight) : base(_name, speed)
     {
-        this._name = _name;
-        this.speed = speed;
         this.maxFlightHeight = maxFlightHeight;
     }
 

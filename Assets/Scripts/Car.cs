@@ -6,10 +6,8 @@ public class Car : Vehicle
 {
     protected float horsePower;
 
-    public Car(string _name, float speed, float horsePower)
+    public Car(string _name, float speed, float horsePower) : base(_name, speed)
     {
-        this._name = _name;
-        this.speed = speed;
         this.horsePower = horsePower;
     }
 

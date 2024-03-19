@@ -340,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   _name: Car
-  speed: 400
+  speed: 1000
 --- !u!4 &1787196264
 Transform:
   m_ObjectHideFlags: 0
